@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flap Board Prompt Generator</title>
+</head>
+<body>
+    <h1>Flap Board Prompt Generator</h1>
+    <form method="POST">
+        <input type="text" name="user_input" placeholder="Enter your text here" required>
+        <button type="submit">Generate Prompt</button>
+    </form>
+    {% if prompt %}
+        <h2>Generated Prompt:</h2>
+        <p>{{ prompt }}</p>
+    {% endif %}
+</body>
+</html>
